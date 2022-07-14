@@ -1,0 +1,239 @@
+html { 
+    font-size: 62.5%; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* フォント */
+@font-face {
+    font-family: 'texgyreadventor-bolditalic'; 
+    src: url('../font/texgyreadventor-bolditalic.otf') format('opentype');
+}
+
+/* slick*/
+.slick-dots li button {
+    background-color: #424545;
+}
+.slick-slide{
+    height:auto!important;
+}
+
+/* header */
+.header_wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    height: 130px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.header_btn_item {
+    width: 70px;
+    height: 70px;
+    background-color: #FFEA16;
+    display: block;
+    border-radius: 50%;
+}
+.header_btn_item:hover {
+    opacity: .7;
+}
+.header_list {
+    display: flex;
+    justify-content: flex-end;
+}
+.header_item {
+    font-size: 1.8rem;
+    margin: 0 27px;
+}
+.header_item > a:hover {
+    opacity: .7;
+}
+
+@media screen and (max-width: 760px) {
+
+}
+
+/* MV */
+
+.mv {
+    max-width: 960px;
+    width: 100%;
+    background-image: url(../img/mv.png);
+    background-size: cover;
+    height: 340px;
+    margin: 0 auto ;
+    position: relative;
+}
+.mv_text {
+    font-size: 4.2rem;
+    color: #fff;
+    font-family: 'texgyreadventor-bolditalic';
+    letter-spacing: 2px;
+    line-height: 1.3;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: rotate(-8deg) translate(-50%,-50%);
+}
+
+/* contents*/
+.contents_item {
+    padding: 30px 10px 50px;
+}
+.contents_item_ttl {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+/* News */
+.news {
+    max-width: 870px;
+    margin: 0 auto 50px;
+}
+.news_list {
+    display: flex;
+    justify-content: space-between;
+}
+.news_item {
+    width: 32%;
+}
+.news_item_img img {
+    width: 100%;
+}
+.news_item_wrap {
+    padding: 10px 0;
+}
+.news_item_date {
+    font-size: 1.4rem;
+    position: relative;
+    margin-bottom: 15px;
+}
+.news_item_date::after {
+    content: '';
+    height: 3px;
+    width: 30px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.news_item_ttl {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    margin-bottom: 5px;
+}
+.news_item_desc {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+@media screen and (max-width: 760px) {
+
+}
+
+
+
+/* About */
+.contents_item#about {
+    background-color: #424545;
+    padding: 30px 10px 70px;
+}
+.contents_item#about > .contents_item_ttl {
+    color: #fff;
+}
+.about {
+    max-width: 870px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+.about_img {
+    width: 310px;
+    height: 230px;
+    margin-right: 50px
+}
+.about_img > img {
+    width: 100%;
+}
+.about_wrap {
+    width: calc(100% - 360px);
+}
+.about_ttl {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.about_desc {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.about_btn_item {
+    font-size: 1.2rem;
+    color: #424545;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 190px;
+    height: 35px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.about_btn_item:before {
+    content:'';
+
+}
+.about_btn_item:hover {
+    opacity: .7;
+}
+/* Product */
+.poroducts_list {
+    max-width: 790px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.products_item {
+    width: 24%;
+}
+.products_item img {
+    width: 100%;
+}
+.products_item:nth-child(n + 5) {
+    margin-top: 10px;
+}
+
+/* Maps */
+.contents_item#maps {
+    padding: 0;
+}
+.maps_inner {
+    width: 100%;
+}
+.maps_inner_item {
+    width: 100%;
+    height: 350px;
+}
+.footer {
+    background-color: #424545;
+}
+.footer_text {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 0;
+}
